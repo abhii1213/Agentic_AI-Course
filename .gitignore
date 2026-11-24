@@ -1,0 +1,34 @@
+# 1. Secrets & API Keys (CRITICAL - never push these!)
+.env
+.env.*
+*.pem
+*.key
+
+# 2. Virtual Environments (across all 01, 02, 03... folders)
+.venv/
+venv/
+env/
+ENV/
+
+# 3. Python Cache & Build Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# 4. Local Vector Databases & Data Dumps (for upcoming RAG projects)
+*.sqlite3
+*.db
+chroma_db/
+faiss_index/
+
+# 5. IDE & OS Generated Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

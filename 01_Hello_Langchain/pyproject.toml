@@ -1,0 +1,28 @@
+[project]
+name = "01-hello-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abhii1213", email = "kabhi12132002@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.5.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.8.5",
+    "langgraph>=1.2.24",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+01-hello-langchain = "_01_hello_langchain:main"
+
+[tool.uv.build-backend]
+module-name = "_01_hello_langchain"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
